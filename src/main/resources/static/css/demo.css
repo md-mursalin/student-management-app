@@ -1,0 +1,11 @@
+.funny {
+	font-style: italic;
+	color: green;
+}
+
+.panel-body{
+	display: flex;
+	justify-content: center;
+	margin-left: 30px;
+}
+
