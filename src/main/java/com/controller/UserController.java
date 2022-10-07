@@ -56,12 +56,11 @@ public class UserController {
 
 
 	@PostMapping("/save")
-	public String saveUser(@ModelAttribute("user") User theEmployee) {
+	public String saveUser(@ModelAttribute("user") User theUser) {
 
-		// save the employee
-		userService.save(theEmployee);
+		userService.save(theUser);
 
-		// use a redirect to prevent duplicate submissions
+		
 		return "redirect:/users/list";
 	}
 
